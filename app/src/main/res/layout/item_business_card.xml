@@ -31,10 +31,11 @@
                 />
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toEndOf="@+id/ic_person"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/ic_person"
                 android:layout_marginLeft="12dp"
                 android:text="Axl Rose"
                 android:textStyle="bold" />
@@ -50,10 +51,11 @@
                 android:layout_marginTop="8dp"/>
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_social"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toEndOf="@+id/ic_share"
-                app:layout_constraintTop_toBottomOf="@+id/ic_person"
+                app:layout_constraintBottom_toBottomOf="@+id/ic_share"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="12dp"
                 android:text="'@gunsnroses"
@@ -70,10 +72,11 @@
                 android:layout_marginTop="8dp"/>
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toEndOf="@+id/ic_phone"
-                app:layout_constraintTop_toBottomOf="@+id/ic_share"
+                app:layout_constraintBottom_toBottomOf="@id/ic_phone"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="12dp"
                 android:text="11 9999-9999"
@@ -90,13 +93,24 @@
                 android:layout_marginTop="8dp"/>
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toEndOf="@+id/ic_email"
-                app:layout_constraintTop_toBottomOf="@+id/ic_phone"
+                app:layout_constraintBottom_toBottomOf="@+id/ic_email"
                 android:layout_marginLeft="12dp"
                 android:text="axl@guns.com"
                 android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_enterprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_email"
+                android:text="Guns 'n' Roses"
+                android:textStyle="bold"
+                android:layout_margin="8dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
