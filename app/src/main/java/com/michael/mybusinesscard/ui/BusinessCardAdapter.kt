@@ -23,7 +23,9 @@ class BusinessCardAdapter : ListAdapter<BusinessCard, BusinessCardAdapter.ViewHo
             binding.tvPhone.text = item.phone
             binding.tvEmail.text = item.email
             binding.tvEnterprise.text = item.enteprise
-            binding.mcvContent.setOnClickListener { listenerShare(it) }
+            binding.mcvContent.setOnClickListener {
+                listenerShare(it)
+            }
          }
     }
 

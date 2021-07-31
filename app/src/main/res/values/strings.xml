@@ -7,4 +7,6 @@
     <string name="label_phone">Telefone</string>
     <string name="label_email">Email</string>
     <string name="label_enterprise">Empresa</string>
+    <string name="label_show_success">Criado com sucesso!</string>
+    <string name="label_share_to">Compartilhe</string>
 </resources>
